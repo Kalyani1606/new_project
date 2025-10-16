@@ -26,6 +26,36 @@ nav ul {
 nav li {
   margin: 5px 0;
 }
+/* Styles for the entire search bar */
+form {
+  display: flex; /* Arranges elements side-by-side */
+  width: 100%;
+  max-width: 400px; /* Limits the width of the bar */
+}
+
+/* Styles for the input field */
+#query {
+  flex: 1; /* Allows the input to grow to fill available space */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Rounds only the left corners */
+}
+
+/* Styles for the search button */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0; /* Rounds only the right corners */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 
 main {
   maxwidth: 800px;
@@ -57,3 +87,4 @@ footer {
 #articlePage {
   margin-top: 150px;
 }
+
