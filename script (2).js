@@ -18,6 +18,17 @@ const articles = [
     content: "<p>Sometimes grayscale can speak louder than colors...</p>"
   }
 ]
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('searchInput');
+  const searchButton = document.getElementById('searchButton');
+
+  searchButton.addEventListener('click', performSearch);
+  searchInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  });
+
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -40,3 +51,4 @@ function openArticle(id) {
   content.innerHTML = `<h2>${article.title}</h2>${article.content}`;
   showPage('articlePage');
 }
+
