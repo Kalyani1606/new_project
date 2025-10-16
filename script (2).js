@@ -17,6 +17,15 @@ const articles = [
     title: "Designing Without Color",
     content: "<p>Sometimes grayscale can speak louder than colors...</p>"
   }
+  {
+  title: "the art of living alone",
+    content: "<p>Sometimes grayscale can speak louder than colors...</p>"
+}
+  {
+  title: "the subtel art of not giving ",
+    content: "<p>Sometimes grayscale can speak louder than colors...</p>"
+}
+  
 ]
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('searchInput');
@@ -51,4 +60,5 @@ function openArticle(id) {
   content.innerHTML = `<h2>${article.title}</h2>${article.content}`;
   showPage('articlePage');
 }
+
 
