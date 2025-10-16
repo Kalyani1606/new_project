@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mediumish Blog</title>
-  <link rel="stylesheet" href="sttyle.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -15,6 +15,13 @@
         <li><a id="aboutLink">About</a></li>
       </ul>
     </nav>
+    <nav>
+            <!-- Other navigation links -->
+           <form action="/search" method="get">
+  <input type="search" id="query" name="q" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+        </nav>
   </header>
 
   <main id="homePage" class="page">
@@ -52,3 +59,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
